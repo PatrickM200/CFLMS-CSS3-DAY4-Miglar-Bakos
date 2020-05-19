@@ -1,0 +1,118 @@
+/* Colors */
+
+$blue-color: #406ef4;
+$hell-blue: #cedafd;
+$hover-color: #90aaf9;
+$white-color: #f8fafa;
+$black-color: #1B2024;
+
+/* Font sizes */
+$font-s-size: 2.2rem;
+$font-m-size: 6rem;
+$font-l-size: 9rem;
+
+/* Paddings, margins etc... */
+$header-height: 12rem;
+$footer-height: 16rem;
+$xs-size: 2rem;
+$s-size: 6rem;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Common practice when working with rem, it makes 1rem exactly 10px, so easier to calculate with it */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  background-color: $blue-color;
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  img {
+    width: $s-size;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: $font-s-size;
+    color: $hell-blue;
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
+}
+
+main {
+  figure {
+    margin: 0;
+  }
+
+  h1 {
+    color: $white-color;
+    font-size: $font-l-size;
+
+    position: absolute;
+    padding: 10rem 0 0 30rem;
+  }
+
+  p {
+    color: $white-color;
+    position: absolute;
+    font-size: $font-s-size;
+    padding: 35rem 0 0 40rem;
+  }
+
+  img {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+}
+
+footer {
+  width: 100%;
+  height: $footer-height;
+  background: linear-gradient(
+    273deg,
+    rgba(143, 154, 158, 1) 0%,
+    rgba(103, 114, 118, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+      color: $black-color;
+      font-size: $font-m-size;
+  }
+}

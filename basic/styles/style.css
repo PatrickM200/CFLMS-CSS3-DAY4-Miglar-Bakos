@@ -1,0 +1,73 @@
+/* Colors */
+/* Font sizes */
+/* Paddings, margins etc... */
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  /* Common practice when working with rem, it makes 1rem exactly 10px, so easier to calculate with it */ }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 80%; }
+
+nav {
+  background-color: #406ef4;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    list-style: none; }
+  nav img {
+    width: 6rem;
+    padding: 0; }
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #cedafd; }
+  nav a:hover {
+    color: #90aaf9; }
+
+main figure {
+  margin: 0; }
+main h1 {
+  color: #f8fafa;
+  font-size: 9rem;
+  position: absolute;
+  padding: 10rem 0 0 30rem; }
+main p {
+  color: #f8fafa;
+  position: absolute;
+  font-size: 2.2rem;
+  padding: 35rem 0 0 40rem; }
+main img {
+  width: 100%;
+  margin: 0;
+  display: block; }
+
+footer {
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(273deg, #8f9a9e 0%, #677276 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer h2 {
+    color: #1B2024;
+    font-size: 6rem; }
+
+/*# sourceMappingURL=style.css.map */
