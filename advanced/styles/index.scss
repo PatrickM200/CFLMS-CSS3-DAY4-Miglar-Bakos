@@ -1,13 +1,14 @@
 .container {
     width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-    display: flex;
 }
 
 .row {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 img {
@@ -15,12 +16,26 @@ img {
 }
 
 .col {
-    width: 20%;
+    flex-basis: 22%;
     margin: 5px;
   }
 
-  @media only screen and (max-device-width: 768px) {
-      .col {
-         width: 50%;
-      }
-  }
+  @media screen and (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: deepskyblue;
+    }
+
+    .col {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: rgb(192, 216, 224);
+    }
+
+    .col {
+        flex-basis: 95%;
+    }
+}
