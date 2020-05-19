@@ -1,0 +1,117 @@
+/* Colors */
+
+$off-black: #333333;
+$off-silver: #aeaeae;
+$blue: #667dbe;
+$black: #131313;
+$white: #ffffff;
+
+/* Font sizes */
+
+$s-size: 1.2rem;
+$m-size: 2.4rem;
+
+$header-height: 8rem;
+$section-1-height: 9rem;
+$main-height: 25rem;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Common practice when working with rem, it makes 1rem exactly 10px, so easier to calculate with it */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav {
+  background-color: $off-black;
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  a {
+    font-size: $m-size;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $off-silver;
+  }
+}
+
+.first-section {
+  max-width: 80%;
+  margin: 0 auto;
+  height: $section-1-height;
+  background-color: $white;
+
+  p {
+    text-align: center;
+  }
+}
+
+.main-content {
+  background-color: lighten($color: $black, $amount: 25%);
+}
+
+.section-2 {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  div {
+    flex-basis: 22%;
+  }
+}
+
+.section-3 {
+  @extend .section-2;
+
+  div {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  input {
+    width: 60%;
+    padding: $s-size;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    resize: vertical;
+  }
+}
+
+.footer {
+  background-color: $black;
+  height: $header-height;
+
+  .blue {
+    color: $blue;
+  }
+}
